@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Linq;
-
-namespace Project_Euler
+﻿namespace Project_Euler
 {
-    class P007
+    internal class P007
     {
+        /*
+         * Problem 007:
+         * By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
+         * What is the 10 001st prime number?
+         */
+
         public static int Solve()
         {
 
