@@ -4,9 +4,9 @@ namespace Project_Euler
 {
     internal class Program
     {
-        private static void Main(string[] args)
+        private static void Main()
         {
-            Console.WriteLine(P016.Solve());
+            Console.WriteLine(P017.Solve());
         }
     }
 }
