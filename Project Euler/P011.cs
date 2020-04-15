@@ -43,7 +43,7 @@ namespace Project_Euler
                     }
                 }
             }
-            
+
             for (int row = 0; row < 17; row++)
             {
                 int start = row * 20;
