@@ -6,4 +6,8 @@
     <RootNamespace>Project_Euler</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
 </Project>
