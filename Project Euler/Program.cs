@@ -6,7 +6,7 @@ namespace Project_Euler
     {
         private static void Main()
         {
-            Console.WriteLine(P024.Solve());
+            Console.WriteLine(P029.Solve());
         }
     }
 }
