@@ -31,7 +31,7 @@
             return amicableSum;
         }
 
-        private static int GetDivisorSum(int number)
+        public static int GetDivisorSum(int number)
         {
             int divisorSum = 0;
             for (int i = 1; i < number; i++)
