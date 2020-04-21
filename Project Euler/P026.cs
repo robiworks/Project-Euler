@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Project_Euler
+﻿namespace Project_Euler
 {
-    class P026
+    internal class P026
     {
         /*
          * A unit fraction contains 1 in the numerator. The decimal representation of the unit fractions with denominators 2 to 10 are given:
