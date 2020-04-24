@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 
 namespace Project_Euler
 {
@@ -6,7 +7,9 @@ namespace Project_Euler
     {
         private static void Main()
         {
-            Console.WriteLine(P030.Solve());
+            var timer = Stopwatch.StartNew();
+            Console.WriteLine(P032.Solve());
+            Console.WriteLine("Solution took {0} ms", timer.ElapsedMilliseconds);
         }
     }
 }
