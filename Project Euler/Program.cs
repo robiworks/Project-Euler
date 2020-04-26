@@ -8,7 +8,7 @@ namespace Project_Euler
         private static void Main()
         {
             var timer = Stopwatch.StartNew();
-            Console.WriteLine(P032.Solve());
+            Console.WriteLine(P034.Solve());
             Console.WriteLine("Solution took {0} ms", timer.ElapsedMilliseconds);
         }
     }
