@@ -3,6 +3,7 @@
     internal class P028
     {
         /*
+         * Problem 28: Number spiral diagonals
          * Starting with the number 1 and moving to the right in a clockwise direction a 5 by 5 spiral is formed as follows:
          * 21 22 23 24 25
          * 20  7  8  9 10

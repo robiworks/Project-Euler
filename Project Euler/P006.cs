@@ -3,7 +3,7 @@
     internal class P006
     {
         /*
-         * Problem 006:
+         * Problem 6: Sum square difference
          * The sum of the squares of the first ten natural numbers is,
          * 1^2 + 2^2 + ... + 10^2 = 385
          * The square of the sum of the first ten natural numbers is,

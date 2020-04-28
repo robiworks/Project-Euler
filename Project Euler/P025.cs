@@ -6,6 +6,7 @@ namespace Project_Euler
     internal class P025
     {
         /*
+         * Problem 25: 1000-digit Fibonacci number
          * The Fibonacci sequence is defined by the recurrence relation:
          * Fn = Fn−1 + Fn−2, where F1 = 1 and F2 = 1.
          * Hence the first 12 terms will be: 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144
