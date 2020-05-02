@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Numerics;
 
 namespace Project_Euler
@@ -141,6 +142,44 @@ namespace Project_Euler
                 return true;
             }
             return false;
+        }
+
+        public static bool IsPalindrome(ulong binaryNumber) // Check if a binary number is palindrome
+        {
+            char[] arr = binaryNumber.ToString().ToCharArray();
+            Array.Reverse(arr);
+            string reversedNumber = new string(arr);
+            if (binaryNumber.ToString() == reversedNumber)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public static List<int> RotateDigits(int number)
+        {
+            List<int> rotations = new List<int>();
+            rotations.Add(number);
+            int digits = number.ToString().Length;
+            int exp = (int)Math.Pow(10, digits - 1);
+            for (int i = 0; i < digits - 1; i++)
+            {
+                int firstDigit = number / exp;
+                int rot = (number * 10) + firstDigit - (firstDigit * exp * 10);
+                number = rot;
+                if (rot.ToString().Length == digits && !rotations.Contains(rot))
+                {
+                    rotations.Add(rot);
+                }
+            }
+            return rotations;
+        }
+
+        public static ulong ToBinary(int base10number)
+        {
+            string temp = Convert.ToString(base10number, 2);
+            ulong binary = ulong.Parse(temp);
+            return binary;
         }
     }
 }

@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Windows.Markup;
 
 namespace Project_Euler
 {
@@ -13,9 +15,24 @@ namespace Project_Euler
          * How many circular primes are there below one million?
          */
 
-        public static void Solve()
+        public static int Solve() // runs in like 30 seconds and a lot of improvement can be done and will be done
         {
-
+            List<int> primes = Library.FindPrimes(1000000);
+            List<int> circulars = new List<int>();
+            for (int i = 2; i < 1000000; i++)
+            {
+                List<int> rots = Library.RotateDigits(i);
+                if (rots.All(val => primes.Contains(val)))
+                {
+                    foreach (int r in rots)
+                    {
+                        circulars.Add(r);
+                        primes.Remove(r);
+                    }
+                }
+            }
+            int circularCount = circulars.Count;
+            return circularCount;
         }
     }
 }

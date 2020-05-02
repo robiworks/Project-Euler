@@ -13,9 +13,26 @@ namespace Project_Euler
          * (Please note that the palindromic number, in either base, may not include leading zeros.)
          */
 
-        public static void Solve()
+        public static int Solve()
         {
-
+            List<int> palindromes10 = new List<int>();
+            int sum = 0;
+            for (int i = 1; i < 1000000; i++)
+            {
+                if (Library.IsPalindrome(i))
+                {
+                    palindromes10.Add(i);
+                }
+            }
+            foreach (int p in palindromes10)
+            {
+                ulong b = Library.ToBinary(p);
+                if (Library.IsPalindrome(b))
+                {
+                    sum += p;
+                }
+            }
+            return sum;
         }
     }
 }
