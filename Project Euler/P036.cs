@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace Project_Euler
 {
-    class P036
+    internal class P036
     {
         /*
          * Problem 36: Double-base palindromes

@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Project_Euler
+﻿namespace Project_Euler
 {
-    class P037
+    internal class P037
     {
         /*
          * The number 3797 has an interesting property.
@@ -14,9 +10,8 @@ namespace Project_Euler
          * NOTE: 2, 3, 5, and 7 are not considered to be truncatable primes.
          */
 
-        public static void SOlve()
+        public static void Solve()
         {
-
         }
     }
 }

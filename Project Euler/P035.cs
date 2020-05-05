@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Windows.Markup;
 
 namespace Project_Euler
 {
-    class P035
+    internal class P035
     {
         /*
          * Problem 35: Circular primes

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Numerics;
 
 namespace Project_Euler
@@ -156,7 +155,7 @@ namespace Project_Euler
             return false;
         }
 
-        public static List<int> RotateDigits(int number)
+        public static List<int> RotateDigits(int number) // Rotate the digits of a number
         {
             List<int> rotations = new List<int>();
             rotations.Add(number);
@@ -175,7 +174,7 @@ namespace Project_Euler
             return rotations;
         }
 
-        public static ulong ToBinary(int base10number)
+        public static ulong ToBinary(int base10number) // Convert base 10 number to base 2 - binary
         {
             string temp = Convert.ToString(base10number, 2);
             ulong binary = ulong.Parse(temp);
