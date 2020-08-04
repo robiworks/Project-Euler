@@ -103,7 +103,7 @@ namespace Project_Euler
 
         public static bool IsPrime(int number) // Simple algorithm for checking if number is prime
         {
-            List<int> precomputedPrimes = FindPrimes(500);
+            List<int> precomputedPrimes = FindPrimes(5000);
             foreach (int prime in precomputedPrimes)
             {
                 if (number % prime == 0)
@@ -179,6 +179,41 @@ namespace Project_Euler
             string temp = Convert.ToString(base10number, 2);
             ulong binary = ulong.Parse(temp);
             return binary;
+        }
+
+        public static int ToPower(int number, int exponent) // Faster than Math.Pow
+        {
+            int result = number;
+            for (int i = 1; i < exponent; i++)
+            {
+                result *= number;
+            }
+            return result;
+        }
+
+        public static List<int> TruncateLeft(int number)
+        {
+            List<int> truncations = new List<int>();
+            truncations.Add(number);
+            int exp = number.ToString().Length - 1;
+            for (int i = exp; i > 0; i--)
+            {
+                int coef = ToPower(10, i);
+                truncations.Add(number % coef);
+            }
+            return truncations;
+        }
+
+        public static List<int> TruncateRight(int number)
+        {
+            List<int> truncations = new List<int>();
+            truncations.Add(number);
+            while (number > 9)
+            {
+                number /= 10;
+                truncations.Add(number);
+            }
+            return truncations;
         }
     }
 }

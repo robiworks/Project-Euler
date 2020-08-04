@@ -1,4 +1,6 @@
-﻿namespace Project_Euler
+﻿using System.Collections.Generic;
+
+namespace Project_Euler
 {
     internal class P037
     {
@@ -12,6 +14,7 @@
 
         public static void Solve()
         {
+
         }
     }
 }
